@@ -29,6 +29,65 @@
         a {
 			font-weight: bold;
 		}
+        
+       
+        .search-box{
+            display: flex;
+            position: relative;
+            background: white;
+            height: 35px;
+            border-radius: 40px;
+            margin-right: 10px;
+            width: 240px;
+           
+            
+              input{
+                background: none;
+                outline: none;
+                border: none;
+                width: 190px;
+                margin-left: 15px;
+                color: rgb(19, 18, 18);
+                font-size: 16px;
+                transition: 0.4s;
+                line-height: 15px;
+              }      
+        }
+
+        .search-btn{
+           
+            display: flex;
+            color: cyan;
+            float: right;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: white;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        
+        
+        
+        #sign_in{
+                
+                display: block;
+                text-decoration: none;
+                width: 30px;
+                height: 30px;
+                svg{
+                   width: 100px;
+                   height: 100px;
+                    fill: white;             
+
+                }
+            
+        }
+
+       
     }
 }
 
