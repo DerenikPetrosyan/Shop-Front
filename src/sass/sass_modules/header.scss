@@ -37,7 +37,7 @@ header {
 		color: rgb(0, 0, 0);
 		z-index: 55;
 		text-align: left;
-        margin-left: 10px;
+        margin-left: 30px;
         margin-top: 0;
 		width: 100%;
 
@@ -99,6 +99,165 @@ header {
         }
 	}
 
+	@media screen and (max-width: 768px){
+		height: 600px;
+		
+
+		.header_content {
+			margin-top: 0px;
+			h1 {
+				font-size: 44px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+			
+		}
+
+	}
+	@media screen and (max-width: 630px) {
+		padding: 10px;
+		.header_content {
+			h1 {
+				font-size: 35px;
+			}
+
+			p {
+				font-size: 15px;
+			}
+
+			.header_content__buttons {
+				a, button {
+					padding: 10px 25px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 510px) {
+		.header_content {
+			h1 {
+				font-size: 30px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			.header_content__buttons {
+				a, button {
+					padding: 10px 15px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1150px){
+	
+		.header_content {
+			margin-top: -100px;
+			
+				
+			h1 {
+				width: 500px;
+				font-size: 44px;
+			}
+
+			p {
+				width: 700px;
+				font-size: 16px;
+			}
+			.header_content__buttons {
+				
+				
+				a, button {
+					max-width: 300px;
+					padding: 10px 25px;
+					margin-right: unset;
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+	}
+	@media screen and (max-width: 1100px){
+		
+		.header_content {
+			margin-top: -180px;
+			
+		}
+
+	}
+	@media screen and (max-width: 1050px){
+		
+		.header_content {
+			margin-top: -200px;
+			p {
+				width: 500px;
+			}
+			.header_content__buttons {
+				display: block;
+				
+				a, button {
+					padding-left: 15px;
+					padding-top: 10px;
+					margin-right: unset;
+					margin-bottom: 15px;
+				}
+			}
+		}
+		
+
+	}
+	@media screen and (max-width: 950px){
+	
+		.header_content {
+			
+			margin-left:25px ;
+			p {
+				width: 500px;
+			}
+		}
+
+	}
+	@media screen and (max-width: 900px){
+	
+		.header_content {
+			margin-top: -250px;
+			p {
+				width: 450px;
+			}
+		}
+
+	}
+	@media screen and (max-width: 550px){
+	
+		.header_content {
+			margin-top: -200px;
+			margin-left: 10px;
+			p {
+		
+				width: 300px;
+			}
+		}
+
+	}
+	@media screen and (max-width: 380px){
+	
+		.header_content {
+			margin-top: -150px;
+			margin-left: 2px;
+			p {		
+				width: 200px;
+			}
+			a{
+				width: 200px;
+			}
+		}
+
+	}
 
 }
 

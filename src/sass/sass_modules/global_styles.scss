@@ -91,3 +91,64 @@ $verySmailMobile : 420px;
 	}
 
 }
+
+
+.item{
+	
+	background:rgba(241, 230, 230, 0.938);
+	border-radius: $br ;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px 2px #ccc ;
+	max-width: 310px;
+	.item_header{
+		a{
+			display: block;
+			max-width: 310px;
+			max-height: 210px;
+			overflow: hidden;
+			
+			img{
+				display: block;
+				width: 100%;						    
+			    min-height: 210px;				
+				object-fit: cover;
+				transition: all 0.02s ;
+			}
+		}
+	}
+
+
+	.item_footer{
+	padding: 7px ;
+	h3{
+		
+		margin-top: 10px;
+		a{
+			background: none;
+			color: #000;
+			
+		}
+	}
+
+	.see_more{
+		display: block;
+		text-align: center;
+		border-radius: $br;
+		margin-top: 20px;
+		background: rgb(120, 236, 240);
+		color: #000;
+		padding: 7px 14px;
+	}
+
+	}
+
+	&:hover{
+		.item_header{
+			a{
+				img{
+					transform: scale(1.2) ;
+				}
+			}
+		}
+	}
+}
