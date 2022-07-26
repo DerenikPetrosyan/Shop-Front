@@ -69,22 +69,53 @@
 
         }
 
-        
-        
-        
-        #sign_in{
-                
-                display: block;
-                text-decoration: none;
-                width: 30px;
-                height: 30px;
-                svg{
-                   width: 100px;
-                   height: 100px;
-                    fill: white;             
-
+        @media screen and (max-width: 500px) {
+            .search-box{
+                width: 220px;
+                input{
+                    width: 170px;
                 }
+
+                @media screen and (max-width: 420px) {
+                    width: 210px;
+                    input{
+                        width: 160px;
+                    }
+                }
+
+                @media screen and (max-width: 390px) {
+                    width: 190px;
+                    input{
+                        width: 140px;
+                    }
+                }
+
+                @media screen and (max-width: 350px) {
+                    width: 150px;
+                    input{
+                        width: 100px;
+                    }
+                }
+
+                @media screen and (max-width: 300px) {
+                    width: 130px;
+                    input{
+                        width: 80px;
+                    }
+                    
+                }
+            }
+
+            a{
+                margin-right: 10px;
+                margin-left:  -10px;
+            }
             
+        }
+
+        #sign_in{
+                width: 40px;
+                height: 40px;            
         }
 
        
@@ -92,13 +123,31 @@
 }
 
 nav{
+    position: sticky;
     background:#fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    box-shadow: 0 6px 36px rgb(0 0 0 / 9%);
     .container{
         display: flex;
         justify-content: space-between;
         min-height: 80px;
         align-items:center ;
         position: relative;
+
+        .nav_logo{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
 
         .nav_menu{
             .menuBtn{
@@ -119,6 +168,7 @@ nav{
                         position: relative;
                         z-index: 5;
                         transition: color 0.4s;
+                        letter-spacing: 1px;
 
                         &::after{
                             content: "";
@@ -152,7 +202,7 @@ nav{
 					flex-flow: column;
 					justify-content: flex-start;
 					position: absolute;
-					top: 0px;
+					top: 0;
 					width: 580px;
 					overflow: hidden;
 					left: -5000px;
