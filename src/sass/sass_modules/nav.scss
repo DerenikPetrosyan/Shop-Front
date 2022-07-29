@@ -16,10 +16,16 @@
             display: block;
             text-decoration: none;
             margin-right: 15px;
-            svg{
+            margin-top: 5px;
+            svg {
+				width: 50px;
+				height: 50px;
+				fill: $primary;
+			}
+            img{
                 width: 40px;
                 height: 40px;
-                fill: $primary;
+                background: none;
             }
             &:last-child{
                 margin-right: 0px;
@@ -36,6 +42,7 @@
             position: relative;
             background: white;
             height: 35px;
+            margin-top: 5px;
             border-radius: 40px;
             margin-right: 10px;
             width: 240px;
@@ -61,6 +68,7 @@
             float: right;
             width: 35px;
             height: 35px;
+            margin-top: 0px;
             border-radius: 50%;
             background: white;
             justify-content: center;
@@ -113,12 +121,7 @@
             
         }
 
-        #sign_in{
-                width: 40px;
-                height: 40px;            
-        }
-
-       
+          
     }
 }
 
@@ -133,19 +136,19 @@ nav{
     .container{
         display: flex;
         justify-content: space-between;
-        min-height: 80px;
+        min-height: 60px;
         align-items:center ;
         position: relative;
 
         .nav_logo{
             display: flex;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             justify-content: center;
             align-items: center;
             img{
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
             }
         }
 
@@ -159,7 +162,7 @@ nav{
                     list-style-type: none;
                     a{
                         display: flex;
-                        height: 80px;
+                        height: 60px;
                         align-items: center;
                         padding: 8px;
                         color: $black;
@@ -183,7 +186,7 @@ nav{
                         }
 
                         &:hover{
-                            color:red;
+                            color:rgb(19, 18, 18);
                             &::after{
                                 height: 100%;
                             }
