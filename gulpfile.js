@@ -19,11 +19,11 @@ const path = "./build";
 
 // sass to css task
 function preproc() {
-	return gulp.src("./src/sass/styles.scss")
+	return gulp.src("./src/sass/*.scss")
 	.pipe(sass().on("error", sass.logError))
 	.pipe(gcmq())
 	.pipe(sourcemaps.init())
-	.pipe(concat("styles.css"))
+//	.pipe(concat("styles.css"))
 	.pipe(autoPrefixer({
 		browsers: ["> 0.01%"],
 		cascade: false
