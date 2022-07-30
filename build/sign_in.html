@@ -12,13 +12,20 @@
 <div class="signnin">
     <div class="empty"></div>
     <div class="sign_in_container">
+        
+        <a href="./index.html" class="exit">
+            <img src="./img/shopping_icon.png">
+        </a>
     <div class="container">
-        <input type="text" placeholder="Գրեք Ձեր օգտանունը" id="username">
-        <input type="password" placeholder="Գրեք Ձեր գաղտնաբառը" id="password">
-        <button>Մուտք գործել</button> 
-        <a href="#" id="forgotten">Մոռացել եք Ձեր գաղտնաառը?</a>
+    <form action="/user" autocomplete="off" method="post">
+        <input type="text" placeholder="Username or mail" id="username">
+        <input type="password" placeholder="password" id="password">
+        <button>Log In</button> 
 
-        <a href="./register.html" id="register">Գրանցվել</a>
+    </form>
+        <a href="#" id="forgotten">Forgot password?</a>
+
+        <a href="./register.html" id="register">Crate new account</a>
 
     </div>
 </div>

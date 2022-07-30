@@ -8,7 +8,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="author" content="Derenik Petrosyan">
 </head>
-<body style="background-image: url('./img/signIn_background.png')">
+<body >
+    <div class="register">
+        <div class="container">
+            <h1>Register</h1>
+            <a href="./index.html" class="exit">
+                <img src="./img/shopping_icon.png">
+            </a>
+            <a href="./sign_in.html" class="sign_in">
+                <img src="./img/user.png">
+            </a>
+            <form action="/user" autocomplete="off" method="post">
+            <input type="text" placeholder=" First name" name="firstName">
+            
+            <input type="text" placeholder=" Last name" name="lastName">
+           
+            <input type="email" placeholder=" Email" name="email">
+           
+           
+            <input type="password" placeholder=" password" name="password">
+            
+            <input type="password" placeholder=" confirm password" name="confirmPassword">
+
+            <h2>Gender</h2>
+            <label for="MALE">MALE</label><input type="radio" name="gender" id="MALE">
+            <label for="FEMALE">FEMALE</label><input type="radio" name="gender" id="FEMALE">
+            <label id="dob"> Birthday </label><input type="date" name = "dob"> 
+
+            <button> Sign up</button>
+        </form>
+        </div>
+
+    </div>
 
 
 </body>

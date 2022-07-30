@@ -36,7 +36,9 @@ $verySmailMobile : 420px;
 	justify-content: flex-end;
 
 	div, div:before, div:after {
-		background: $black;
+		background: rgb(193,139,237);
+		background: radial-gradient(circle, rgba(193,139,237,1) 1%, rgba(148,187,233,1) 100%);
+//		background: $black;
 		border-radius: 10px;
 		width: 40px;
 		height: 5px;
