@@ -6,23 +6,45 @@ window.addEventListener("DOMContentLoaded", () =>{
 
     try {
 		see_all_product .addEventListener("click", () => {
-            console.log(555);
+
 			window.scrollTo({
-				top: 650,
+				top: 620,
 			});
 		});
 	} catch{}
 
 
-    // menuBtn.addEventListener("click", ()=>{
-    //     if(!menuBtn.classList.contains("open")){
-    //         menuBtn.classList.add("open");
-    //         navMenu.classList.add("active_nav");
-    //     }else{
-    //         menuBtn.classList.remove("open");
-    //         navMenu.removeAttribute("class");
-    //     }
-    // })
+    menuBtn.addEventListener("click", ()=>{
+        if(!menuBtn.classList.contains("open")){
+            menuBtn.classList.add("open");
+            navMenu.classList.add("active_nav");
+        }else{
+            menuBtn.classList.remove("open");
+            navMenu.removeAttribute("class");
+        }
+    })
+
+    
+	try {
+		const item = document.querySelectorAll(".item");
+		const itemTitle = document.querySelectorAll(".item .item_footer h3 a");
+
+		item.forEach(item => {
+			item.setAttribute(
+				"title", 
+				item.children[1]
+				.children[0]
+				.textContent.trim()
+			);
+		})
+		
+		itemTitle.forEach(title => {
+			if (title.textContent.length >= 20) {
+				title.textContent = title.textContent.slice(0, 20) + "...";
+			}
+		});
+		
+	} catch {}
 
    
 

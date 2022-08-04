@@ -48,9 +48,9 @@ function handleSubmit(event) {
     const data = new FormData(event.target);
 
     const value = Object.fromEntries(data.entries());      
-
-    console.log({ value });
-    window.open("index.html");
+    
+    // console.log({ value });
+    window.location="index.html";
 }
 
 form.addEventListener('submit', handleSubmit);

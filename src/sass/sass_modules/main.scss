@@ -1,6 +1,7 @@
 main{
-    height: 1200px ;
-
+	h2{
+		font-family: 'Lobster Two', cursive;
+	}
     .items_wrapper{
         display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));

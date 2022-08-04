@@ -15,6 +15,7 @@ header {
 	position: relative;
 	height: 90vh;
 	overflow: hidden;
+	font-family: 'Courgette', cursive;
 
     @media screen and (max-width: 1680px){
 		background-size: cover;
@@ -70,6 +71,7 @@ header {
 				overflow: hidden;
 				background: transparent;
 				font-size: 16px;
+				font-family: 'Courgette', cursive;
 //				text-transform: uppercase;
 
 				&::before {
@@ -92,10 +94,6 @@ header {
 				}
 			}
 
-           
-
-
-			
         }
 	}
 

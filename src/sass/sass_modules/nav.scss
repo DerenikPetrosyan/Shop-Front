@@ -173,7 +173,9 @@ nav{
                         position: relative;
                         z-index: 5;
                         transition: color 0.4s;
-                        letter-spacing: 1px;
+                        letter-spacing: 1.5px;
+                        font-size: 18px;
+                        font-family: 'Kalam', cursive;
 
                         &::after{
                             content: "";
