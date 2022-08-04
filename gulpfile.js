@@ -12,6 +12,7 @@ const gcmq = require("gulp-group-css-media-queries");
 const sourcemaps = require("gulp-sourcemaps");
 const babel = require("gulp-babel");
 
+
 // created path
 const path = "./build";
 
@@ -57,7 +58,7 @@ function styles() {
 function scripts () {
 	return gulp.src("./src/js/**/*.js")
 	.pipe(sourcemaps.init())
-	.pipe(concat("all.js"))
+//	.pipe(concat("all.js"))
 	.pipe(babel({
 		"presets": ["@babel/env"]
 	}))
@@ -145,3 +146,17 @@ gulp.task("watch", watch);
 gulp.task("build", gulp.series(clean, gulp.parallel(htmls, preproc, styles, scripts, img, fonts, libs)));
 
 gulp.task("dev", gulp.series("build", "watch"));
+
+
+var express = require('express')
+var cors = require('cors')
+var app = express()
+ 
+app.options('/products/:id', cors()) // enable pre-flight request for DELETE request
+app.del('/products/:id', cors(), function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+})
+ 
+app.listen(80, function () {
+  console.log('CORS-enabled web server listening on port 80')
+})
